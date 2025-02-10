@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Carta de San Valentín">
+    <title>Carta de San Valentín</title>
+    <link rel="icon" href="pngwing.com.png">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="card">
+        <h1>Querida ALe</h1>
+        <p>Hola, amorchito, ¿cómo estás? Siempre es un poco difícil para mí escribir algo porque la verdad no sé qué decir, pero pues vamos a ver.</p>
+        <p>Quería darte las gracias por todo lo que haces por mí, gracias por ser la mujer que siempre me impulsa a ser mejor persona y por ser la mujer que me hace sentir tan amado y querido. Quiero también decirte que yo jamás voy a dejar de amarte, en serio, jamás. Únicamente voy a dejar de amarte si tengo evidencias claras de que alguien te ama tan solo un poco más que yo, y eso es imposible.</p>
+        <p>Mi mundo cambió por completo cuando llegaste a mi vida. Yo la verdad tenía miedo e intriga al principio, no sabía realmente qué iba a pasar con nosotros, pero jamás imaginé encontrar al amor más hermoso y puro, a la mujer con la que quiero absolutamente todo. Contigo todo siempre es sí, me das mucha seguridad y paz. Muchas gracias por eso y por todo.</p>
+        <div><img src="pngwing.com.png" alt="Imagen pequeña" style="width: 100px; height: auto;"></div>
+        <button onclick="mostrarMensaje()">Sí, quiero</button>
+        <button onclick="mostrarMensajeNo()">No</button>
+    </div>
+
+    <script>
+        function mostrarMensaje() {
+            alert('¡Gracias amorchito te amo musho musho! ¡Feliz San Valentín!');
+        }
+        function mostrarMensajeNo() {
+            const mensajes = [
+                '¿Como que no?',
+                '¡Y con quien me voy a casar si me dice que no??!',
+                '¡La unica opcion es si :)!',
+                '¡Solo diga que si UwU!'
+            ];
+            const mensajeAleatorio = mensajes[Math.floor(Math.random() * mensajes.length)];
+            alert(mensajeAleatorio);
+        }
+    </script>
+</body>
+</html>
